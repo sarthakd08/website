@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sarthak Dua</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/SimpleSlider.css" rel="stylesheet" type="text/css">
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/Am2_SimpleSlider.js" type="text/javascript"></script>
+    <style type="text/css">
+       #wss{
+          opacity: 0;
+          -webkit-transition:opacity 1.0s linear 0s;
+          transition:opacity 1.0s linear 0s;
+          color: #00796B;
+          font-size: 5.6em;
+          font-weight: 900;
+          text-shadow:5px 4px #222;
+          /*padding: 5px;*/
+       }
+        @media (max-width: 640px){
+          #wss{font-size: 4.2em;}
+        }
+    </style>
+  </head>
+  <body class="  ">
+
+  <div class="home-wrap">
+
+  <div class="home-sections">
+
+    
+
+    <section id="memories">
+      <h3 class="memories-sec-heading">Some Memories to Cherish!</h3>
+      <ul class="product-gallery">
+        <li class="gallery-img">
+          <img src='assets/img/IMG_0716.jpg' alt="img01" style="width:100%; height:100%;">
+          <div data-desc="So this was the first time i tried rafting(irrespective of my water phobia :P). We went to Shivpuri site located around 16 KM from Rishikesh where we started our rafting journey in the white waters of the Shivpuri river. There were about 13 challenging rapids in the rafting stretch in Rishikesh that we covered. As you see a rapid approaching you, that moment engulfs you but soon you get used to tackle that. The whole experience was quite adventurous and fun."></div>
+        </li>
+        <li class="gallery-img">
+          <img src='assets/img/IMG_7636.jpg' alt="img01" style="width:100%;">
+          <div data-desc="Image Descript 1"></div>
+        </li>e
+        <li class="gallery-img">
+          <img src='assets/img/IMG_7819.jpg' alt="img01" style="width:100%;">
+          <div data-desc="As Berthold Auerbach rightly quoted 'Music washes away from the soul the dust of everyday life', well here was i with music and serenity by side. What else can a restless soul demand on a weekend getaway?"></div>
+        </li>
+        <li class="gallery-img">
+          <img src='assets/img/IMG_7925.jpg' alt="img01" style="width:100%;">
+          <div data-desc="So i know most of you will be familiar with these gentlemen by my side if you are a standup comedy fan. Correct! these are the very hillarious Zakhir Khan(left) and Amit Tandon. We guys(me and my lovely lady friends on the extreme left) went to witness these extremely funny human beings live at UB City at Bangalore who were successful in tickling our funny bones for more that 2 hours. I must have lost a kg or half that night :p"></div>
+        </li>
+        <li class="gallery-img">
+          <img src='assets/img/IMG_7958.jpg' alt="img01" style="width:100%;">
+          <div data-desc="Image Descript 1"></div>
+        </li>
+        <li class="gallery-img">
+          <img src='assets/img/IMG_5441.jpg' alt="img01" style="width:100%;">
+          <div data-desc="Image Descript 1"></div>
+        </li>
+      </ul>
+      <a href="all_memories.html" target="_block" class="see-memories-button">See all memories</a>
+    </section>
+
+
+
+   <!--  <footer id="contact" class="home-footer"><a href="mailto:sarthakdua1994@gmail.com">sarthakdua1994@gmail.com</br><h3>#91-8800872205</h3></a> -->
+     <div class="contact_me">
+          <p style="text-shadow:4px 4px #111;">Wanna Contact Me?</p>
+        </div>
+      <div id="contact" class="social">
+        <h2>sarthakdua1994@gmail.com</h2>
+        <h2>+91-8800872205</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/sarthak.dua.9"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/sarthakdua12"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/sarthak-dua-333b43b8/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/114468727913186680217"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+   </div>
+       
+   <!--  </footer> -->
+
+
+
+  </div>
+
+
+</div>
+
+
+  <script>
+    var wss_i=0;
+    var wss_array= ["Frontend Developer","Budding Guitarist","Music Enthusiast","Avid Voyager"];
+    var wss_elem= document.getElementById("wss"); wssSlide();
+    function wssNext(){
+       wss_i++;
+       wss_elem.style.opacity= 0;
+       if(wss_i> (wss_array.length-1)){
+          wss_i= 0;
+       }
+      setTimeout('wssSlide()', 1000);
+    }
+    function wssSlide(){
+       wss_elem.innerHTML= wss_array[wss_i];
+       wss_elem.style.opacity= 1;
+       setTimeout('wssNext()', 2000);
+    }
+
+     function toggleClass(el){
+      var kids= document.getElementById('menu1').children;
+      for(var i=0; i<kids.length; i++){
+        kids[i].className= "state1";
+      }
+      el.className= "state2";
+    }
+  </script>
+
+  <script type="text/javascript">
+   $('.gallery-img').Am2_SimpleSlider();
+  </script>
+
+
+  <script src="assets/js/functions.js"></script>
+
+
+
+  </body>
+</html>
